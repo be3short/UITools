@@ -14,7 +14,7 @@ public class MenuInstance implements MenuDefinition
 		this.label = label;
 		if (sub_menus.length > 0)
 		{
-			addMenuDefinition(sub_menus);
+			subMenuItems = sub_menus;
 		}
 	}
 
