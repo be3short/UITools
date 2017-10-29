@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+
+    jcenter()
+    maven { url "https://jitpack.io" } // access to github repositories
+}
+configurations.all {
+    // Check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+dependencies {
+
+    testCompile 'junit:junit:4.12' // j unit for testing
+  	compile 'com.github.be3short:ObjectTools:-SNAPSHOT'  // object tools for object related operations
+	
+}
+
