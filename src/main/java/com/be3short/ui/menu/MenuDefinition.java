@@ -57,7 +57,7 @@ public interface MenuDefinition
 			{
 				for (MenuDefinition subItem : root.subMenuItems())
 				{
-					hasSubItem = Arrays.asList(root.subMenuItems()).contains(item);
+					hasSubItem = hasSubItem || Arrays.asList(root.subMenuItems()).contains(item);
 					hasSubItem = hasSubItem || MenuDefinition.containsSubItem(subItem, item);
 				}
 
